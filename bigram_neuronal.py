@@ -86,5 +86,5 @@ print(f'epoch final | loss = {loss.item()}')
 probs=model.probability_distribution(word_to_idx["he"])
 print(f"P_neuronale('il' -> 'est') = {round(probs[word_to_idx['is']].item(), 3)}")
 
-#use the model
+#use the neuronal model model
 print(f"texte généré : {model.generate(start_word='he', lenght_max=30)}")
